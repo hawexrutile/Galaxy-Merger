@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"check.C": "cpp",
+			"ArabindaBehera.C": "cpp",
+			"EPcentsmallpt.C": "cpp",
+			"cmath": "cpp",
+			"iostream": "cpp",
+			"hist.C": "cpp",
+			"string": "cpp",
+			"check - Copy.C": "cpp",
+			"v2 v1.0.0.C": "cpp",
+			"V2 v3.10.100.C": "cpp",
+			"3.1 Fitting.C": "cpp"
+		}
+	}
+}

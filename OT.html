@@ -15,6 +15,17 @@
 
 			gtag('config', 'G-4S3M46RV2G');
 		</script>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script>
+			MathJax = {
+				tex: {
+					inlineMath: [['$', '$'], ['\\(', '\\)']]
+				}
+			};
+		</script>
+		<script type="text/javascript" id="MathJax-script" async
+		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+		</script>
 		<title>Observational Techniques- Landed by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -26,18 +37,18 @@
 
 			<!-- Header -->
 			<header id="header">
-				<h1 id="logo"><a href="index.html" class="icon solid  fa-home button"></a></h1>
+				<h1 id="logo"><a href="index.html" class="icon solid  fa-home button primary"></a></h1>
 				<nav id="nav">
 					<ul>
 						<li>
-							<a href="#" class="icon solid fa-bars button"></a>
+							<a href="#" class="icon solid fa-bars button primary"></a>
 							<ul>
 								<li><a href=#one class="scrolly">Abstract</a></li>
 								<li><a href="I1.html">Introduction</a></li>
 								<li><a href="I2.html">Advanced</a></li>
 								<li><a href="OT.html">Observational Techniques</a></li>
-								<li><a href="TT.html">Observational Results</a></li>
-								<li><a href="OR.html">Theoretical Techniques</a></li>
+								<li><a href="OR.html">Observational Results</a></li>
+								<li><a href="TT.html">Theoretical Techniques</a></li>
 								<li><a href="TR.html">Theoretical Results</a></li>
 								<li><a href="D.html">Discussion</a></li>
 								<li><a href="C.html">Conclusion</a></li>
@@ -62,7 +73,7 @@
 					<div class="container">
 						<header class="major">
 							<h2>Observational Techniques</h2>
-							<p>Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan</p>
+							<p>The measurements of the history of galaxy merging is sometimes thought to be ambiguous.</p>
 						</header>
 						<div class="row gtr-150">
 							<div class="col-4 col-12-medium">
@@ -70,8 +81,18 @@
 								<!-- Sidebar -->
 									<section id="sidebar">
 										<section>
-											<h3>Magna Feugiat</h3>
-											<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit..</p>
+											<h3>Merger Fractions</h3>
+											<p>The galaxy merger fraction ( fgm) is thus the number of galaxies merging, where a system that
+												has already condensed into a single galaxy is counted as two galaxies, divided by the number of
+												galaxies in the total sample.However this often results from comparing measured galaxy merger fractions (fgm)
+												and merger rates ($\mathfrak{R}$) using different techniques to identify the total number of galaxies
+												involved in mergers ($N_{gm}$) at various wavelengths ($\lambda$), as well as at different luminosity
+												($M_B$), and stellar mass ($M^∗$) ranges. The observed merger fraction is the number of galaxies determined
+												to be a merger by a technique within a given set of
+											</p>
+											<p>
+												$$\color{#e44c65} \mathrm{f}_{\mathrm{gm}}\left(\mathrm{M}_*, \mathrm{M}_{\mathrm{B}}, z, \lambda\right)=\frac{\mathrm{N}_{\mathrm{gm}}\left(\mathrm{M}_*, \mathrm{M}_{\mathrm{B}}, \mathrm{z}, \lambda\right)}{\mathrm{N}_{\mathrm{T}}\left(\mathrm{M}_*, \mathrm{M}_{\mathrm{B}}, \mathrm{z}, \lambda\right)}$$
+											</p>
 											<footer>
 												<ul class="actions">
 													<li><a href="#" class="button">Learn More</a></li>
@@ -80,12 +101,17 @@
 										</section>
 										<hr />
 										<section>
-											<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-											<h3>Amet Lorem Tempus</h3>
-											<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+											<a title="testing" href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+											<h3>Nonparametric Measurements</h3>
+											<p>At present, the most common methods for measuring galaxy structure in a nonparametric way
+												is through the concentration (C), asymmetry (A), clumpiness (S) (CAS) system. These parameters are designed to capture the major features of the underlying structures
+												of these galaxies, but in a way that does not involve assumptions about the underlying form, as is
+												done with S´ersic fitting (Section 2.2). These nonparametric parameters are also measurable out to
+												high redshifts, making them ideal for deriving galaxy evolution over many epochs, as we discuss in
+												Section 4.</p>
 											<footer>
 												<ul class="actions">
-													<li><a href="#" class="button">Learn More</a></li>
+													<li><a href="NPM.html" class="button">Learn More</a></li>
 												</ul>
 											</footer>
 										</section>
@@ -96,24 +122,138 @@
 
 								<!-- Content -->
 									<section id="content">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<h3>Dolore Amet Consequat</h3>
-										<p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam quam, mollis at magna consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam.</p>
-										<p>Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum porta cursus justo. Quisque ultricies lorem in ligula condimentum, et egestas turpis sagittis. Cras ac nunc urna. Nullam eget lobortis purus. Phasellus vitae tortor non est placerat tristique.</p>
-										<h3>Sed Magna Ornare</h3>
-										<p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus.</p>
-										<ul>
-											<li>Faucibus orci lobortis ac adipiscing integer.</li>
-											<li>Col accumsan arcu mi aliquet placerat.</li>
-											<li>Lobortis vestibulum ut magna tempor massa nascetur.</li>
-											<li>Blandit massa non blandit tempor interdum.</li>
-											<li>Lacinia mattis arcu nascetur lobortis.</li>
-										</ul>
+										<a href="#" class="image fit"><img src="images/pic02.gif" alt="" /></a>
+										<h3>Intro</h3>
+										<p>Do galaxies merge? Does the formation of galaxies rely on merging? The answer to
+											the first question is undoubtedly yes. There are undeniable and famous ongoing galaxy
+											mergers in the nearby universe, such as the Antennae, as well as accretion of galaxy
+											satellites into our own galaxy. Perhaps mergers are rare however, and perhaps the low
+											level merging seen in our own galaxy is a minor contributor to its mass and evolution.
+											On the other hand, merging may be the dominate method whereby galaxies acquire
+											their mass, and this activity may drive the evolution we see in distant galaxies (e.g.,
+											Hopkins et al. 2006). It is furthermore possible that galaxy merging is not only the
+											driving force behind galaxy formation, but may also induce star formation and black
+											hole growth, and has been conjectured to be the link between galaxies and quasars.
+											We are just beginning to explore observationally the idea that merging is the dominate
+											method whereby galaxies form, and understanding its role in a cosmological context will
+											likely be one of the major debates in extragalactic astrophysics in the coming years.
+										</p>
+										<p>
+											Determining the history of galaxy interactions, as opposed to active mergers, is more
+											difficult. In some sense, looking for galaxies in pairs (Patton et al. 2002) gives us a
+											good idea for the likely interaction history, as close galaxies will be interacting without
+											necessarily merging. While some increase in the star formation rate is seen for galaxies
+											in close pairs (e.g., Barton et al. 2003), it is not clear what the global role interactions
+											play in the increase of stellar mass in galaxies. Recent investigations suggest that the
+											merger and interaction history together contribute a large fraction of the star formation
+											at z < 1 (Bridge et al. 2006).
+										</p>
+										<p>
+											We are in fact now able to resolve galaxies back to redshifts of z = 8 with imaging from space 
+											and more recently with adaptive optics from the ground
+										</p>
+										<h3>"Merger Fraction"- Quantifying Evolution</h3>
+										<p>	
+											There are only a few methods for measuring the merger fraction, all of which have their
+											limitations and advantages.Note that a major merger throughout this review is a merger in which 
+											the ratio of the stellar masses of the progenitors are 1:4 or greater. A minor merger is one with a 
+											mass ratio of less than 1:4.
+										</p>
+										<p>
+											One ultimate result of finding these mergers is that it allows us to calculate the merger fraction 
+											within a population of galaxies. The basic merger fraction ( fm) is calculated as the number of mergers 
+											selected within a given redshift bin and stellar mass limit (or luminosity cut) ( Nm) divided by the 
+											total number of galaxies within the same redshift bin and stellar mass selection ( NT). 
+
+										</p>
+
+										<p>
+											Furthermore, for structural samples, we calculate the merger fraction as opposed to the galaxy
+											merger fraction. The difference is important when comparing with pair studies in which the two
+											progenitors can be resolved.The difference between these twois subtle, but important.The merger
+											fraction considers a merger as having already happened; the two galaxies that have merged now
+											count as a single system. The galaxy merger fraction is the fraction calculated when both of these
+											merging galaxies are considered as two separate galaxies, which they were before the final merger.
+										</p>
+
+										<h4>I Pair studies</h4>
+										<p>
+											The oldest and perhaps most straightforward observational
+											method is to look for galaxies in pairs (e.g., Lin et al. 2004). However, pair studies require
+											spectroscopy of complete samples of field galaxies, and have only successfully been applied
+											up to z ∼ 1.4. The pair fraction, and resulting merger fraction based on pairs of similar
+											luminosities, increases slightly up to z ∼ 1 (see Bridge et al. 2006).
+										</p>
+
+										<h4>II Morphology and Kinematics study</h4>
+										<p>
+											The other method,
+											particularly useful at z > 1, is to look for galaxies that are peculiar in their morphology
+											or kinematics, and to use this as a measure of the merger fraction (Conselice et al. 2003;
+											Lavery et al. 2004; Papovich et al. 2005; Conselice et al. 2005; Lotz et al. 2006).
+										</p>
+										<p>
+											Visual morphological classifications have been performed on nearly all deep HST imaging
+											starting from its earliest days (e.g., Dressler et al. 1994, van den Bergh et al. 1996). This has
+											continued with deeper and deeper HST observations, including those that sample the rest-frame
+											optical in the near-IR (e.g., Lee et al. 2013, Mortlock et al. 2013). There are, however, some
+											limitations to how these classifications can be used at higher redshifts, as it is not clear how the
+											apparent morphology of a galaxy changes under the influence of redshift effects as opposed to real
+											evolution
+										</p>
+										<p>
+											One automatic method for finding mergers is the CAS approach (Conselice 2003), in which merging galaxies 
+											are those with a high asymmetry that is also higher than the value of the clumpiness.The simple condition
+											$$ \color{#e44c65}(A > 0.35) \& (A > S) $$
+											accounts for a large fraction, but not all, of local galaxies that are mergers. Although the contamination from nonmergers is fairly low
+											(at a few percent), the fraction of actualmergers that are identified is roughly 50% (Conselice 2003).
+											This is largely due to the fact that galaxies involved in the merger process are only quantitatively
+											asymmetric for about a third of the lifetime of the merger.
+										</p>
+										<h3>The Merger History</h3>
+										<p>
+											One of the primary, if not the primary, uses of galaxy structure at high redshift at the time ofwriting
+											is to measure the merger history of galaxies
+										</p>
+										<h4>The merger fraction evolution.</h4>
+										<p>
+											It is measured at high redshift through the criteria described in Section 3.2, and the resulting merger fractions are
+											shown in Figure 12 (e.g., Conselice et al. 2008, 2009; Bluck et al. 2012).	
+										</p>
+										<h4>Galaxy merger rate evolution</h4>
+										<p>
+											The merger fraction is converted into a galaxy merger rate through the use of the merger
+											timescale $\tau_{m}$, which can be derived through simulations or through the decline in the merger 
+											fraction at lower redshifts.Using the merger timescale, the merger rate per galaxy is thereby defined 
+											by the parameter $\Gamma$ $$\color{#e44c65} \Gamma(M^*, z) = \frac{\tau _m}{f_{gm}}$$.
+											The value of $\Gamma$ is in units of gigayears and gives the average amount of time between mergers for a
+											galaxy within the given selection property, typically stellarmass, and within a given redshift range.Note that within the definition of  the galaxy merger fraction is used rather than the merger
+											fraction.
+										</p>
+										<p>
+											Using the evolution of the galaxy merger rate, per galaxy, $\Gamma$, the number of mergers that occur
+											between various redshifts is calculated by integrating the inverse of $\Gamma$ over redshift
+
+
+											$$\color{#e44c65} N_{\text {merg }}=\int_{t_1}^{t_2} \Gamma^{-1} d t=\int_{z_1}^{z_2} \Gamma^{-1} \frac{t_H}{(1+z)} \frac{d z}{E(z)} . $$
+										</p>
+										<h4>Galaxy Mass Acretion Rate</h4>
+										<p>
+											Although the number of mergers is an interesting and fundamental quantity, we are ultimately
+											interested in the amount of stellar mass added from mergers to galaxies over time. The total
+											amount of stellar mass accreted into a galaxy is calculated as a double integral over the redshift
+											range of interest (z1 to z2 or lookback times t1 and t2) and over the stellar masses range that is
+											being probed (M1 to M2), and can be expressed as
+											$$\color{#e44c65} M_{*, M}=\int_{t_1}^{t_2} \int_{M_1}^{M_2} M_* \times \frac{f_m^{\prime}\left(z, M_*\right)}{\tau_{\mathrm{m}}\left(M_*\right)} d M_* d z, $$
+										</p>
+										
+
 										<footer class="major">
 											<ul class="actions special">
 												<li><a href="I2.html" class="icon solid fa-arrow-left button"></a></li>
 												<li><a href="TT.html" class="icon solid fa-arrow-right button"></a></li>
 											</ul>
+											<hr />
 										</footer>
 									</section>
 

@@ -15,6 +15,17 @@
 
 			gtag('config', 'G-4S3M46RV2G');
 		</script>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script>
+			MathJax = {
+				tex: {
+					inlineMath: [['$', '$'], ['\\(', '\\)']]
+				}
+			};
+		</script>
+		<script type="text/javascript" id="MathJax-script" async
+		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+		</script>
 		<title>Right Sidebar - Landed by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -36,8 +47,8 @@
 								<li><a href="I1.html">Introduction</a></li>
 								<li><a href="I2.html">Advanced</a></li>
 								<li><a href="OT.html">Observational Techniques</a></li>
-								<li><a href="TT.html">Observational Results</a></li>
-								<li><a href="OR.html">Theoretical Techniques</a></li>
+								<li><a href="OR.html">Observational Results</a></li>
+								<li><a href="TT.html">Theoretical Techniques</a></li>
 								<li><a href="TR.html">Theoretical Results</a></li>
 								<li><a href="D.html">Discussion</a></li>
 								<li><a href="C.html">Conclusion</a></li>
@@ -69,19 +80,52 @@
 
 								<!-- Content -->
 									<section id="content">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-										<h3>Galaxy merger</h3>
-										<p>During the merger, stars and dark matter in each galaxy become affected by the approaching galaxy. Toward the late stages of the merger, the gravitational potential (i.e. the shape of the galaxy) begins changing so quickly that star orbits are greatly altered, and lose any trace of their prior orbit. This process is called “violent relaxation”. For example, when two disk galaxies collide they begin with their stars in a orderly rotation in the planes of the two separate disks. During the merger, that ordered motion is transformed into random energy (“thermalized”). The resultant galaxy is dominated by stars that orbit the galaxy in a complicated and random interacting network of orbits, which is what is observed in elliptical galaxies.</p>
-										<p>Mergers are also locations of extreme amounts of star formation. The star formation rate (SFR) during a major merger can reach thousands of solar masses worth of new stars each year, depending on the gas content of each galaxy and its redshift. Typical merger SFRs are less than 100 new solar masses per year. This is large compared to our Galaxy, which makes only a few new stars each year (~2 new stars). Though stars almost never get close enough to actually collide in galaxy mergers, giant molecular clouds rapidly fall to the center of the galaxy where they collide with other molecular clouds.[citation needed] These collisions then induce condensations of these clouds into new stars. We can see this phenomenon in merging galaxies in the nearby universe. Yet, this process was more pronounced during the mergers that formed most elliptical galaxies we see today, which likely occurred 1–10 billion years ago, when there was much more gas (and thus more molecular clouds) in galaxies. Also, away from the center of the galaxy gas clouds will run into each other producing shocks which stimulate the formation of new stars in gas clouds. The result of all this violence is that galaxies tend to have little gas available to form new stars after they merge. Thus if a galaxy is involved in a major merger, and then a few billion years pass, the galaxy will have very few young stars (see Stellar evolution) left. This is what we see in today's elliptical galaxies, very little molecular gas and very few young stars. It is thought that this is because elliptical galaxies are the end products of major mergers which use up the majority of gas during the merger, and thus further star formation after the merger is quenched.</p>
-										<h3>simulations</h3>
-										<p>Galaxy mergers can be simulated in computers, to learn more about galaxy formation. Galaxy pairs initially of any morphological type can be followed, taking into account all gravitational forces, and also the hydrodynamics and dissipation of the interstellar gas, the star formation out of the gas, and the energy and mass released back in the interstellar medium by supernovae. Such a library of galaxy merger simulations can be found on the GALMER website.</p>
-										<ul>
-											<li>Faucibus orci lobortis ac adipiscing integer.</li>
-											<li>Col accumsan arcu mi aliquet placerat.</li>
-											<li>Lobortis vestibulum ut magna tempor massa nascetur.</li>
-											<li>Blandit massa non blandit tempor interdum.</li>
-											<li>Lacinia mattis arcu nascetur lobortis.</li>
-										</ul>
+										<div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+												<div class="col-6"><span class="image fit"><img src="Plots/con1.png" alt="" /></span></div>
+												<div class="col-6"><span class="image fit"><img src="Plots/con2.png" alt="" /></span></div>
+											</div>
+										</div>
+										<a href="#" class="image fit"><img src="Plots/Lotz.png" alt="" /></a>
+										<h3>Merger Timescale</h3>
+										<p>
+											Conselice used the CAS method to calculate the timescale of the merger process on dark-matter 
+											particle simulations, finding a merger timescale of ~0.3–0.8 Gyr for galaxies having a 
+											high-enough asymmetry to be identifie as an unambiguous merger.
+										</p>
+										<p>
+											This timescale is critical for interpreting galaxy merger fractions through cosmic time, as it 
+											allows us to convert merger fractions to merger rates and thus derive how mergers are driving 
+											galaxy formation. Using these results, Conselice (2006b) deduces that a typical galaxy 
+											undergoes $4.4^{+1.6}_{-0.9}$ mergers from z ~ 3 to z ~ 0.
+										</p>
+										<p>
+											Time when amerger is asymmetric is distributedthroughout the merger process and is not located at one particular time.
+											Moreover, the merging systems would not always be identifiable as such when studied with the CAS parameters. 
+											In addition to giving a robust timescale, Conselice (2006b) also shows that only a fraction 
+											(about a third) of a merging galaxy’s time sequence would be identified as a major merger using CAS. 
+											The timescale derived is also largely independent of the viewing angle of the merger, and an asymmetry 
+											signal is only present within major mergers with mass ratios of 1:4 or greater.
+										</p>
+
+										<p>
+											When star formation and dust are added to simulations of galaxy structure the quantitative structural 
+											parameters measured are similar to those seen in nearby galaxies, and the measured structure 
+											correlates with other properties, such as color, in the same way it does for nearby galaxies
+										</p>
+										<p>
+											Lotz et al.(2008b, 2010a) find that the asymmetry timescales for gas-rich major mergers are 0.2–0.4 Gyr and
+											0.06 Gyr for minor mergers (Lotz et al. 2010a). The Gini/M20 timescales are $\tau_m$= 0.2−0.4 Gyr.
+											These are relatively quick timescales and, thus, suggest that the observed merger fraction converts
+											to a high merger rate.a high merger rate.This is similar to, but not exactly the same as, the dynamical friction merger timescales calculated
+											for merging objects that have a separation change from ri to rf . The dynamical friction
+											timescale is given by $t_{fric}$:
+											$$\color{#e44c65}t_{\text {fric }}=0.0014 \operatorname{Gyr}\left(r_i^2-r_f^2\right)\left(\frac{v_c}{100 \mathrm{~km} \mathrm{~s}^{-1}}\right)\left(\frac{10^{10} \mathrm{M}_{\odot}}{M}\right)$$
+											where $v_c$ is the relative velocity between the two merging galaxies at a given time, M is the mean
+											accreted mass.Dynamical friction calculations such as these have dominated the calculation of galaxy timescales up until simulations
+											of mergers revealed more subtle results.although the blunt calculations from Equation 13 are
+											often a good rough estimate for merger timescales, giving values of ∼0.5 Gyr for equal-mass
+											mergers.
 										<footer class="major">
 											<ul class="actions special">
 												<li><a href="OR.html" class="icon solid fa-arrow-left button"></a></li>
