@@ -109,53 +109,52 @@
 								<h3>CAS parameters </h3>
 								<div class="container">
 								<p>
-									The CAS (concentration, asymmetry, smoothness) parameters are a tool originally developed in astronomy to 
-									characterize the shapes and images of objects with some central concentration. Each parameter is a single 
-									number which represents some aspect of the structure of the object under study. These parameters were originally 
-									developed by astronomers to quantify the light distribution of galaxies, as a way to avoid having to use visual 
-									estimates of galaxy morphological classification. They have also been used in biological imaging, and other areas
-									of imaging analysis. Each parameter is measured in a well defined way and within a well defined radius.
+									The CAS (concentration, asymmetry, smoothness) parameters were originally developed in astronomy to classify the shapes and 
+									images of objects with some central concentration. Each parameter consists of a single integer that indicates a different 
+									feature of the structure of the thing being studied.
 								</p>
 								
 								<h3>Asymmetry (A) </h3>
 								<p>
-									<span class="image left"><img src="Plots/A.png" alt="" /></span>The asymmetry index is a measure of how symmetric an object is. measure of how asymmetric a galaxy is after rotating along the line-of-sight center axis
-									of the galaxy by 180◦. This parameter has been used in astronomy to determine galaxy mergers and its history. 
-									The asymmetry is a measure of skewness in terms of the 2-dimensional distribution of light. The basic formula for calculating the asymmetry index (A) is given by:
+									
+									<blockquote>The asymmetry index is a measure of how symmetric an object is. measure of how asymmetric a galaxy is after rotating along the line-of-sight center axis
+										of the galaxy by 180◦. </blockquote>
+								</p>
+								<p>
+									<span class="image left"><img src="Plots/A.png" alt="" /></span>The basic formula for calculating the asymmetry index (A) is given by:
 									$$ \color{#e44c65}  A=\min \left(\frac{\Sigma\left|I_0-I_{180}\right|}{\Sigma\left|I_0\right|}\right)$$
 									where $I_{0}$ represents the original galaxy image and $I_{180}$ is the image after rotating it from its center
-									by 180◦. The measurement of the asymmetry parameter, however, involves several steps beyond
-									this simple measure. This includes carefully dealing with the background noise in the same way
-									as is done on the galaxy itself, by using a blank background area ($B_{0}$) and finding the location for
-									the center of rotation.
+									by 180◦. We also have to take care  of the background noise in the same way
+									as is done on the galaxy itself. <a href="https://iopscience.iop.org/article/10.1086/375001/pdf">Conselice et al. 2003</a>
+								</p>
+									
 
 								</p>
 								<h3>Concentration (C)</h3>
+								<blockquote>The concentration of light quantifies howmuch 
+									light is in the center of a galaxy as opposed to its outer parts.</blockquote>
 								<p>
-									<span class="image right"><img src="Plots/C.png" alt="" /></span>The concentration of light quantifies howmuch 
-									light is in the center of a galaxy as opposed to its outer parts.It is an  
-									analog of the mean for a spatial distribution in two dimensions. There are many ways of measuring the concentration, including taking ratios of radii
-									that contain a certain fraction of light as well as measuring the ratio of the amount of light at two
-									given radii.These radii are often defined by the total amount of light measured within some Petrosian radius, often at the same location as used
-									for measuring the asymmetry index.The ratio most commonly used is that of two circular radii that contain an inner and outer
-									fraction of the total galaxy flux,
+									<span class="image right"><img src="Plots/C.png" alt="" /></span>There are numerous methods for determining the concentration, 
+									such as comparing the ratios of each containing a specific amount of light or the ratio of the amount of light at 
+									two specified radii. 
+									The ratio that includes an inner and outer percentage of the total galaxy flux is the most frequently used.
 									$$\color{#e44c65}C=5 \times \log \left(\frac{r_{\text {outer }}}{r_{\text {inner }}}\right)\color{#e44c65}$$
 									A higher value of C indicates that a larger amount of light in a galaxy is contained within a central region.
-									
+									<a href="https://iopscience.iop.org/article/10.1086/375001/pdf">Conselice et al. 2003</a>
 								</p>
 								
 								<h3>Smoothness (S)</h3>
 								<p>
-									<span class="image left"><img src="Plots/S.png" alt="" /></span>The smoothness (also called clumpiness) is a measure of the fraction of light in an object which is in small scale 
-									structures. It is an analog of the standard deviation for a 2-dimensional image. Clumpy galaxies have a relatively large
-									amount of light at high spatial frequencies, whereas smooth systems, such as elliptical galaxies, contain light at low 
-									spatial frequencies.Clumpiness can be measured in a number of ways; the most common method used IS:
-									$$ \color{#e44c65}S=10 \times \left(\frac{\Sigma\left(I_{x, y}-I_{x, y}^\sigma\right)}{\Sigma I_{x, y}}\right) $$
-									where the original image, $I_{x,y}$ , is blurred to produce a secondary image, $I^σ_{x,y}$. This
+									<blockquote>The smoothness (also called clumpiness) is a measure of the fraction of light in an object which is in small scale 
+										structures.</blockquote>
+									<span class="image left"><img src="Plots/S.png" alt="" /></span>  Smooth systems, like elliptical galaxies, contain light at low 
+									spatial frequencies, whereas clumpy galaxies have a relatively substantial amount of light at high spatial frequencies. 
+									There are several ways to measure clumpiness; the most popular one is:
+									$$ \color{#e44c65}S=10 \times \left(\frac{\Sigma\left(I_{x, y}-I_{x, y}^\sigma\right)}{\sigma I_{x, y}}\right) $$
+									where the original image, $I_{x,y}$ , is blurred to produce a secondary image, $I^{\sigma}_{x,y}$. This
 									blurred image is then subtracted from the original image, leaving a residual map containing only
-									high-frequency structures in the galaxy. The size of the smoothing kernel σ is
-									determined by the radius of the galaxy. Note that the centers of galaxies are removed when
-									this procedure is carried out as they often contain unresolved high spatial frequency light.
+									high-frequency structures in the galaxy. The size of the smoothing kernel $\sigma$ is
+									determined by the radius of the galaxy. <a href="https://iopscience.iop.org/article/10.1086/375001/pdf">Conselice et al. 2003</a>
 								</p>
 							</div>
 							<hr />    <!-- For making lines -->  
@@ -165,23 +164,29 @@
 								
 							<section>
 
-								<h3>Gini/M20 parameters</h3>
+								<h3>Gini/$M_{20}$ parameters</h3>
 								<p>
-									<span class="image left"><img src="images/MiceGMerger.jpg" alt="" /></span>Elliptical galaxies (most notably supergiant ellipticals, 
-									such as ESO 306-17) are among some of the largest known thus far. Their stars are on orbits that are randomly oriented within 
-									the galaxy (i.e. they are not rotating like disk galaxies). A distinguishing feature of elliptical galaxies is that the velocity 
-									of the stars does not necessarily contribute to flattening of the galaxy, such as in spiral galaxies. Elliptical galaxies have 
-									central supermassive black holes, and the masses of these black holes correlate with the galaxy's mass.
+									The Gini coefficient (G) is a statistical technique first used in economics to assess how wealth is distributed among a population;
+									larger values denote a highly unequal distribution (a Gini of 1 signifies all light is contained in one pixel), while a lower value 
+									denotes a more equitable distribution (Gini of 0 means every pixel has an equal share).
 								</p>
 								<p>
-									<span class="image right"><img src="images/antenag.jpg" alt="" /></span>Elliptical galaxies have two main stages of evolution. The 
-									first is due to the supermassive black hole growing by accreting cooling gas. The second stage is marked by the black hole 
-									stabilizing by suppressing gas cooling, thus leaving the elliptical galaxy in a stable state. The mass of the black hole is also 
-									correlated to a property called sigma which is the dispersion of the velocities of stars in their orbits. This relationship, 
-									known as the M-sigma relation, was discovered in 2000. Elliptical galaxies mostly lack disks, although some bulges of disk galaxies 
-									resemble elliptical galaxies. Elliptical galaxies are more likely found in crowded regions of the universe (such as galaxy clusters).
+									A galaxy in this case is considered
+									a system with n pixels, each with a flux $f_i$, where i ranges from 0 to n. The Gini coefficient is then
+									measured by
+									$$\color{#e44c65} \mathrm{G}=\frac{1}{|\bar{f}| n(n-1)} \sum_i^n(2 i-n-1)\left|f_i\right|\color{#e44c65} $$
 								</p>
-								
+								<p>
+									The value of $M_{20}$ is the moment of the fluxes of the brightest 20% of light in a galaxy, which is then normalized by the total
+									light moment for all pixels <a href="https://ui.adsabs.harvard.edu/link_gateway/2004AJ....128..163L/PUB_PDF">Lotz et al. 2004</a>.
+									$$ \color{#e44c65} M_{20}=\log 10\left(\frac{\sum_i M_i}{M_{\text {tot }}}\right)$$, while $\sum_i f_i < 0.2 f_{\text {tot }}$,
+									where the value of $M_{\text {tot }}$ is
+									$$ \color{#e44c65}
+									M_{\mathrm{tot}}=\sum_i^n M_i=\sum_i^n f_i\left[\left(x_i-x_{\mathrm{c}}\right)^2+\left(y_i-y_{\mathrm{c}}\right)^2\right]
+									$$
+									here $x_c$ and $y_c$ indicate the center of the galaxy, and in the case of $M_20$ this center is defined as the location
+									where the value ofMtot is minimized <a href="https://ui.adsabs.harvard.edu/link_gateway/2004AJ....128..163L/PUB_PDF">Lotz et al. 2004</a>
+								</p>
 								<footer class="major">
 									<ul class="actions special">
 										<li><a href="OT.html" class="icon solid fa-arrow-right-from-bracket button"></a></li>

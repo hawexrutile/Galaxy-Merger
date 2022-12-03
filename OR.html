@@ -37,31 +37,27 @@
 
 			<!-- Header -->
 			<header id="header">
-				<h1 id="logo"><a href="index.html" class="icon solid  fa-home button"></a></h1>
+				<h1 id="logo"><a href="index.html" class="icon solid  fa-home button primary"></a></h1>
 				<nav id="nav">
 					<ul>
 						<li>
-							<a href="#" class="icon solid fa-bars button"></a>
+							<a href="#" class="icon solid fa-bars button primary"></a>
 							<ul>
 								<li><a href=#one class="scrolly">Abstract</a></li>
 								<li><a href="I1.html">Introduction</a></li>
 								<li><a href="I2.html">Advanced</a></li>
-								<li><a href="OT.html">Observational Techniques</a></li>
+								<li>
+									<a href="OT.html">Observational Techniques</a>
+									<ul>
+										<li><a href="NPM.html">CAS Method</a></li>
+										<li><a href="MF.html">Merger Fraction</a></li>
+									</ul>
+								</li>
 								<li><a href="OR.html">Observational Results</a></li>
 								<li><a href="TT.html">Theoretical Techniques</a></li>
 								<li><a href="TR.html">Theoretical Results</a></li>
-								<li><a href="D.html">Discussion</a></li>
-								<li><a href="C.html">Conclusion</a></li>
-								<li><a href="no-sidebar.html">Summary</a></li>
-								<!-- <li>
-									<a href="#">Submenu</a>
-									<ul>
-										<li><a href="#">Option 1</a></li>
-										<li><a href="#">Option 2</a></li>
-										<li><a href="#">Option 3</a></li>
-										<li><a href="#">Option 4</a></li>
-									</ul>
-								</li> -->
+								<li><a href="Conclussion.html">Conclusion</a></li>
+
 							</ul>
 						</li>
 					</ul>
@@ -79,7 +75,7 @@
 							<div class="col-4 col-12-medium">
 
 								<!-- Sidebar -->
-									<section id="sidebar">
+									<!-- <section id="sidebar">
 										<section>
 											<h3>Magna Feugiat</h3>
 											<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit..</p>
@@ -100,7 +96,7 @@
 												</ul>
 											</footer>
 										</section>
-									</section>
+									</section> -->
 
 							</div>
 							<div class="col-8 col-12-medium imp-medium">
@@ -113,47 +109,108 @@
 												<div class="col-6"><span class="image fit"><img src="Plots/red2.png" alt="" /></span></div>
 											</div>
 										</div>
-										<h3>The merger fraction evolution</h3>
+										<h3>The Merger Fraction Evolution</h3>
 										<p>
 											This figure shows that
 											the inferred merger fraction increases with redshift. This increase is typically fit as a power law of
-											the form:$$\color{#e44c65} f_{\mathrm{m}}=f_0 \times(1+z)^m $$ where $f_0$ is the merger fraction at z = 0 
-											and m is the power-law index for measuring mergers. In general, the higher the value of m the more steeply 
+											the form:
+											$$\color{#e44c65} f_{\mathrm{m}}=f_0 \times(1+z)^m $$ where $f_0$ 
+											is the merger fraction at $z = 0$ 
+											and m is the power-law index for measuring mergers. In general, the higher the value of $m$ the more steeply 
 											the merger history increases at higher redshifts.
 											
 										</p>
-										<p>A compilation of the merger fraction history for galaxies selected with stellar masses $M_*>10^{10} M_{\odot}$ 
-											and $M_*>10^{11} M_{\odot} \cdot(a)$ Points shown here are for $M_*>10^{10} M_{\odot}$ galaxies, including 
-											results from Conselice et al. (2003a) at $z>1$ in the Hubble Deep Field (solid circles); from Conselice (2009) 
-											at $z < 1.2$ (solid boxes); and from Mortlock et al. (2013) at $z>1$ (open boxes). Also shown are pair merger 
-											fractions at separations of $ < 30 \mathrm{kpc}$ : from Man et al. (2012) at $z>1$ (crosses) and from 
-											Lopez-Sanjuan et al. (2010) (large open boxes with crosses). (b) The merger history for $M_*>10^{11} M_{\odot}$ 
-											systems, including results from Conselice (2009) at $ < 1.2$ (solid boxes); from Bluck et al. (2009, 2012) at 
-											$z > 0.5$ (solid circles); and from Mortlock et al. (2013) at $z>1$ (open boxes). 
-											In both panels, the line with the dark solid circles is the best fit relation for a merger fraction 
-											parameterization as $\sim(1+z)^m$. The blue dotted lines in both panels $a$ and $b$ and the red dashed line in 
-											panel $b \mid$ show the predicted merger history within warm dark matter (WDM) simulation predictions at the
-											labeled respective masses. The solid black line shows the corresponding predictions from cold dark matter (CDM)
-											simulations. For the $M_*>10^{10} M_{\odot}$ panel I also show the merger fraction calculation from abundance 
-											matching using various WMAP and concordance cosmologies as well as abundance matching from 
-											Stewart et al. (2008) (line made up of red crosses).
+										<p>	
+											The figure shows a compilation of the merger fraction history for galaxies selected with stellar masses $M_*>10^{10} M_{\odot}$ 
+											and $M_*>10^{11} M_{\odot} \cdot$ Also shown are pair merger fractions at separations of $ < 30 \mathrm{kpc}$
+											<ol>
+												<li>
+													Points shown here are for $M_*>10^{10} M_{\odot}$ galaxies, including
+													<ul>
+														<li>Conselice et al. (2003a) at $z>1$ in the Hubble Deep Field (solid circles)</li>
+														<li>from Conselice (2009) at $z < 1.2$ (solid boxes)</li>
+														<li>from Mortlock et al. (2013) at $z>1$ (open boxes)</li>
+														<li>from Man et al. (2012) at $z>1$ (crosses)</li>
+														<li>fLopez-Sanjuan et al. (2010) (large open boxes with crosses)</li>
+													</ul> 
+													.
+												</li>
+												<li>
+													The merger history for $M_* >10^{11} M_{\odot}$ 
+													systems, including results from
+													<ul>
+														<li>Conselice (2009) at $ < 1.2$ (solid boxes)</li>
+														<li>from Bluck et al. (2009, 2012) at 
+															$z > 0.5$ (solid circles)</li>
+														<li>from Mortlock et al. (2013) at $z>1$ (open boxes)</li>
+
+													</ul>  
+													In both panels, the line with the dark solid circles is the best fit relation for a merger fraction 
+													parameterization as $\sim(1+z)^m$. The blue dotted lines in both panels $a$ and $b$ and the red dashed line in 
+													second pannel show the predicted merger history within warm dark matter (WDM) simulation predictions at the
+													labeled respective masses. The solid black line shows the corresponding predictions from cold dark matter (CDM)
+													simulations. For the $M_*>10^{10} M_{\odot}$.
+												</li>
+											</ol>
+
 										</p>
 										<p>
-											The merger history tends to peak at z ∼ 2.5 for massive galaxies with $M^∗ > 10^{10}M_\odot$ at values
-											of fm ∼ 0.3−0.4 and decline at lower redshifts. The values for m found in the literature can vary
+											The merger history tends to peak at $z \sim 2.5$ for massive galaxies with $M^∗ > 10^{10}M_\odot$ at values
+											of $f_m \sim 0.3−0.4$ and decline at lower redshifts. The values for $m$ found in the literature can vary
 											significantly, but most of this is due to different selections and different redshift ranges used as
-											well as the use of various values for the local merger fraction. The first studies using pairs found a
-											very steep increase up to z ∼ 1, with m = 2.8±0.9 for a luminosity-selected sample up to z ∼ 0.4
-											(Patton et al. 1997). The value of m was later found by Patton et al. (2002) to be m = 2.3 ± 0.7
-											within the CNOC2 redshift survey up to z ∼ 0.55. Le F`evre et al. (2000) measure the merger
-											fraction using 285 galaxies in the Canada-France Redshift Survey and the Low Dispersion Survey
-											Spectrograph surveys up to z∼1, finding a power-law index ofm = 3.2±0.6, although this lowers
-											to m = 2.7 ± 0.6 after considering selection effects. Other studies have found similar values, with
-											m = 1.5 ± 0.7 for brighter galaxies in the VIMOS VLT Deep Survey (de Ravel et al. 2009),
-											and m = 3.1 ± 0.1 for pairs up to z ∼ 1 in the COSMOS field (Kartaltepe et al. 2007). These
-											are, however, all relatively nearby galaxies at z < 1. For higher redshifts, Bluck et al. (2009) find
-											a power law of m = 3.0 ± 0.4 for galaxies with$M^∗ > 10^{11}M_\odot$ using pairs from the GOODS
-											NICMOS survey.
+											well as the use of various values for the local merger fraction. 
+										</p>
+										<p>
+											<div class="table-wrapper">
+												<table class="alt">
+													<thead>
+														<tr>
+															<th>$\sim z$</th>
+															<th>Description</th>
+															<th>m</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>0.4</td>
+															<td>(Patton et al. 1997)</td>
+															<td>$2.8 \pm 0.9$</td>
+														</tr>
+														<tr>
+															<td>0.55</td>
+															<td>(Patton et al. 2002) CNOC2 redshift survey </td>
+															<td>$ 2.3 \pm 0.7$</td>
+														</tr>
+														<tr>
+															<td> < 1</td>
+															<td>(Le F`evre et al. 2000) Canada-France Redshift Survey and the Low Dispersion Survey
+																Spectrograph surveys</td>
+															<td>$3.2 \pm 0.6$</td>
+														</tr>
+														<tr>
+															<td> < 1</td>
+															<td>(Le F`evre et al. 2000) considering selection effects</td>
+															<td>$3.2 \pm 0.6$</td>
+														</tr>
+														<tr>
+															<td> < 1</td>
+															<td>(de Ravel et al. 2009) Brighter galaxies in the VIMOS VLT Deep Survey </td>
+															<td>$1.5 ± 0.7$</td>
+														</tr>
+														<tr>
+															<td> < 1</td>
+															<td>(Kartaltepe et al. 2007) COSMOS field </td>
+															<td>$3.1 \pm 0.1$</td>
+														</tr>
+														<tr>
+															<td> > 1 </td>
+															<td> Bluck et al. (2009) GOODSNICMOS survey; $M^∗ > 10^{11}M_\odot$</td>
+															<td>$3.0 ± 0.4$</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+
 										</p>
 									<hr/>
 										<div class="box alt">
@@ -164,35 +221,33 @@
 										</div>
 										<h3>Merger Rate Evolution</h3>
 										<p>
-											The result of this is studied in detail byConselice (2009) and Bluck et al. (2009); initial results using
+											The result of this is studied in detail by Conselice (2009) and Bluck et al. (2009); initial results using
 											simulations are discussed by Conselice (2006b).The result of these calculations shows that the
-											number of major mergers a galaxy undergoes between z = 3 and z = 1 is 4.3 ± 0.8 major mergers
-											at z < 3 (Conselice et al. 2008) for galaxies selected with stellarmasses $M^∗ > 10^{10}M_\odot$. There also
-											appears to be a limited number of mergers at higher redshifts of z > 3 (Conselice & Arnold 2009).
+											number of major mergers a galaxy undergoes between $z = 3$ and $z = 1$ is $4.3 \pm 0.8$ major mergers
+											for galaxies selected with stellarmasses $M^∗ > 10^{10}M_\odot$.
 										</p>
 										<p>
-											The merger rate for galaxies plotted in two different ways. The upper panels plot the merger rate per galaxy,
-											(a) (z) at stellar mass limits of $M^∗ > 10^{10}M_\odot$ and (b) $M^∗ > 10^{11}M_\odot$. The units of  are in gigayears and
-											represent the average time between mergers for a typical galaxy at the given mass limit.
-											(c,d ) The ultimate realization of the merger rate is shown at these two stellar mass limits, as the number of
-											mergers occurring per gigayear per comoving cubic megaparsec. The point types in the merger rate per
-											galaxy have the same meanings as the merger fraction plot in Figure 12.
+											The merger rate for galaxies plotted in two different ways. The  panels plot the merger rate per galaxy,
+											<ol>
+												<li>$\Gamma (z)$ at stellar mass limits of $M^∗ > 10^{10}M_\odot$</li>
+												<li>$\Gamma (z)$ at stellar mass limits of $M^∗ > 10^{11}M_\odot$</li>
+
+											</ol>
+
 										</p>
 										<h3>Mass Acretion Rate</h3>
 										<p>
-											where τm (M∗) is the merger timescale, which depends on the stellar mass of the merging pair
-											(Bluck et al. 2012). From this we calculate the total integration of the amount of mass assembled
-											through merging for galaxies with stellar masses M∗ > 1011M. For a z < 3 mass complete
-											sample at this limit, Conselice et al. (2013) find a value M∗,M /M∗(0) = 0.56±0.15, where M∗(0)
-											is the initial average stellar mass at z ∼ 3, and M∗,M is the average amount of stellar mass accreted
+											For a $z < 3$ mass complete
+											sample at this limit, Conselice et al. (2013) find a value $M_{∗,M} /M_∗(0) = 0.56 \pm 0.15$, where $M_∗(0)$
+											is the initial average stellar mass at $z \sim 3$, and $M_{∗,M}$ is the average amount of stellar mass accreted
 											in mergers at z = 1–3. This ratio is the fractional amount of stellar mass added due to both major
-											and minormergers for systems with stellarmass ratios down to 1:100 for an averagemassive galaxy
-											after a merger adjusted for constant comoving density (Conselice et al. 2013). By observing the
+											and minormergers for systems with stellarmass ratios down to 1:100 for an average massive galaxy
+											after a merger adjusted for constant co-moving density (Conselice et al. 2013). By observing the
 											number of mergers, we can get an idea of how much gas is added to galaxies through the merger
 											process. Comparing this with the star-formation rate, there is a large deficiency, which must be
 											accounted for by gas accreted from the intergalactic medium.Using this number and the observed
 											star-formation rate within these galaxies, the gas accretion rate from the intergalactic medium is
-											calculated at around 100M year−1, adding roughly the same amount of stellar mass to these
+											calculated at around $100M_{\odot} year^{−1}$, adding roughly the same amount of stellar mass to these
 											galaxies as mergers (Conselice et al. 2013).
 										</p>
 
